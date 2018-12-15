@@ -10,6 +10,9 @@ var m2 = 20;
 var l1 = 150;
 var l2 = 150;
 
+var angacc1 = 0;
+var angacc2 = 0;
+
 var angvel1 = 0;
 var angvel2 = 0;
 
@@ -101,9 +104,13 @@ function mouseReleased() {
 function mouseDragged() {
     if(drag1) {
         theta1 = atan2(mouseY - Y, mouseX - X) - PI/2;
+        angvel1 = 0;
+        angvel2 = 0;
     }
 
     if(drag2) {
         theta2 = atan2(mouseY - y1, mouseX - x1) - PI/2;
+        angvel1 = 0;
+        angvel2 = 0;
     }
 }

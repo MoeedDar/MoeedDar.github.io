@@ -59,7 +59,7 @@ function run() {
 function draw() {
     if(!drag1 && !drag2) run();
 
-    fill(255, 50);
+    fill(255, 70);
     rect(0,0,width,height);
 
     strokeWeight(25);
